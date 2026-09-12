@@ -1,0 +1,8 @@
+{
+  "port": 17888,
+  "accessPassword": "",
+  "targetHost": "xjskp.x1j2s3k4p.lol",
+  "targetPort": 6688,
+  "defaultDelay": 1500,
+  "comment": "accessPassword 留空表示不设密码；设置后访问网页需要输入密码。port 为服务监听端口。"
+}

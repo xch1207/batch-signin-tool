@@ -1,0 +1,19 @@
+# Render.com 一键部署配置
+# 使用方法：将此文件放在项目根目录，在 Render 中选择 "Blueprint" 导入
+# 或直接在 Render Dashboard 中手动创建 Web Service
+
+services:
+  - type: web
+    name: batch-signin-tool
+    runtime: node
+    plan: free
+    buildCommand: "echo 'No build needed'"
+    startCommand: "node server.js"
+    envVars:
+      - key: NODE_VERSION
+        value: "20.11.0"
+      # 如需设置访问密码，取消下面两行注释并修改密码
+      # - key: ACCESS_PASSWORD
+      #   value: "your-password-here"
+    healthCheckPath: /api/status
+    autoDeploy: true

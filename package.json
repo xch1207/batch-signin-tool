@@ -1,0 +1,16 @@
+{
+  "name": "batch-signin-tool",
+  "version": "1.0.0",
+  "description": "批量签到工具 - 多账号自动登录并完成每日签到",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["signin", "batch", "auto"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
